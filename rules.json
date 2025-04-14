@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "url": "https://wormate.io/js/game.min.js"
+            }
+        },
+        "condition": {
+            "urlFilter": "https://wormateup.live/js/game.js",
+            "resourceTypes": ["script"]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": {
+                "url": "https://wormate.io/css/game.css"
+            }
+        },
+        "condition": {
+            "urlFilter": "https://wormateup.live/css/game.css",
+            "resourceTypes": ["stylesheet"]
+        }
+    }
+] 
