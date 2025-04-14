@@ -1,0 +1,34 @@
+{
+    "name": "Tim map Wormate",
+    "description": "This extension allows map options in Wormate.io webgame with funny graphics",
+    "author": "Pham Phu Bach",
+    "icons": {
+        "128": "icon.png"
+    },
+    "manifest_version": 3,
+    "version": "0.2",
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "Tim map Wormate"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "declarative_net_request": {
+        "rule_resources": [{
+            "id": "ruleset_1",
+            "enabled": true,
+            "path": "rules.json"
+        }]
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "webNavigation",
+        "scripting"
+    ],
+    "host_permissions": [
+        "*://wormate.io/*",
+        "*://wormateup.live/*"
+    ]
+} 
